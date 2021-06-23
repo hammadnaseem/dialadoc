@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".Activities.Appointment">
+
+
+
+
+
+
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/appointment_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:titleTextColor="@color/white_color"
+        android:background="@color/colorPrimary"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+    </android.support.v7.widget.Toolbar>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="64dp"
+        android:layout_marginRight="10dp"
+        android:orientation="vertical"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/appointment_toolbar">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="100">
+
+            <TextView
+                android:id="@+id/txtName"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="40"
+                android:text="Doctor Name"
+                android:textColor="@color/black"
+                android:textSize="@dimen/doc_head_size"
+                android:textStyle="bold"
+
+                />
+
+            <TextView
+                android:id="@+id/doc_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="60"
+                android:text="Testing Doctor"
+                android:textSize="@dimen/doc_detail_size" />
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:weightSum="100">
+
+            <TextView
+                android:id="@+id/txtgender"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="35"
+                android:text="Doctor Gender"
+                android:textColor="@color/black"
+
+                android:textSize="@dimen/doc_head_size"
+                android:textStyle="bold"
+
+                />
+
+            <TextView
+                android:id="@+id/doc_gender"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="60"
+                android:text="25 years"
+                android:textSize="@dimen/doc_detail_size" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:weightSum="100">
+
+            <TextView
+                android:id="@+id/txtage"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="35"
+                android:text="Doctor Age"
+                android:textColor="@color/black"
+
+                android:textSize="@dimen/doc_head_size"
+                android:textStyle="bold"
+
+                />
+
+            <TextView
+                android:id="@+id/doc_age"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="60"
+                android:text="25 years"
+                android:textSize="@dimen/doc_detail_size" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:weightSum="100">
+
+            <TextView
+                android:id="@+id/txtmail"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="45"
+                android:text="Doctor Email"
+                android:textColor="@color/black"
+                android:maxLines="1"
+
+                android:textSize="@dimen/doc_head_size"
+                android:textStyle="bold"
+
+                />
+
+            <TextView
+                android:id="@+id/doc_email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="60"
+                android:text="25 years"
+                android:textSize="@dimen/doc_detail_size" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:weightSum="100">
+
+            <TextView
+                android:id="@+id/textphone"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="35"
+                android:text="Doctor Phone "
+                android:textColor="@color/black"
+
+                android:textSize="@dimen/doc_head_size"
+                android:textStyle="bold"
+
+                />
+
+            <TextView
+                android:id="@+id/doc_phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="60"
+                android:text="25 years"
+                android:textSize="@dimen/doc_detail_size" />
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/textviewlinearlayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical"
+            android:visibility="gone"
+            android:weightSum="100">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="35"
+                android:text="Details "
+                android:textColor="@color/black"
+
+                android:textSize="@dimen/doc_head_size"
+                android:textStyle="bold"
+
+                />
+
+            <TextView
+                android:id="@+id/patientDetails"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="60"
+                android:text="25 years"
+                android:textSize="@dimen/doc_detail_size" />
+
+
+
+        </LinearLayout>
+
+      <LinearLayout
+          android:id="@+id/patientinputdetail"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:orientation="vertical"
+          >
+
+          <TextView
+
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_marginTop="20dp"
+              android:text="Enter Details"
+              android:textColor="@color/black"
+              android:textSize="@dimen/doc_head_size"
+              android:textStyle="bold" />
+
+
+          <EditText
+              android:id="@+id/appoint_details"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:autofillHints="true"
+              android:gravity="top|left"
+              android:hint="Enter Note For Doctor"
+              android:inputType="textMultiLine"
+              android:lines="3"
+              android:maxLines="4"
+              android:minLines="2"
+              android:scrollbars="vertical"
+
+
+              />
+
+
+
+      </LinearLayout>
+
+
+
+    </LinearLayout>
+
+    <Button
+
+        android:id="@+id/fix_appointment_btn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/buttonbackground"
+        android:text="Submit"
+        android:textAlignment="center"
+        android:textColor="@color/white_color"
+        android:textSize="16sp"
+        android:visibility="gone"
+        android:foreground="?android:attr/selectableItemBackground"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2"
+        tools:ignore="UnusedAttribute" />
+
+    <ProgressBar
+        android:id="@+id/appoint_progress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2" />
+
+
+    </android.support.constraint.ConstraintLayout>
+

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.ChatActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/chat_bar_layout"
+        android:background="@color/colorPrimary"
+
+        >
+
+
+    </android.support.v7.widget.Toolbar>
+
+
+   <!-- <android.support.v4.widget.SwipeRefreshLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/linearLayout"
+        android:layout_below="@id/chat_bar_layout"
+        android:layout_alignParentStart="true"
+        android:id="@+id/swipe_refresh_layout">-->
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/messages_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/linearLayout"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/chat_bar_layout">
+
+
+        </android.support.v7.widget.RecyclerView>
+   <!-- </android.support.v4.widget.SwipeRefreshLayout>-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:weightSum="10"
+        android:id="@+id/linearLayout">
+
+        <ImageButton
+            android:id="@+id/camera_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/cardview_light_background"
+            android:foreground="@drawable/ripple_bg"
+
+            android:contentDescription="TODO"
+            android:padding="10sp"
+            android:src="@drawable/baseline_add_black_18dp" />
+
+        <EditText
+            android:id="@+id/messagge_Edit_text"
+            android:layout_width="260dp"
+            android:layout_height="match_parent"
+            android:layout_weight="8"
+            android:background="@color/cardview_light_background"
+            android:padding="12sp"
+
+            android:hint="Type message here"
+
+            android:inputType="text"
+
+            />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/cardview_light_background"
+            android:padding="10sp"
+            android:id="@+id/send_msg_btn"
+            android:foreground="@drawable/ripple_bg"
+
+            android:src="@drawable/baseline_send_black_18dp" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>

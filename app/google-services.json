@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "476338777715",
+    "firebase_url": "https://dial-to-doc-default-rtdb.firebaseio.com",
+    "project_id": "dial-to-doc",
+    "storage_bucket": "dial-to-doc.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:476338777715:android:0f894843a74a15789d8406",
+        "android_client_info": {
+          "package_name": "com.sda.dialadoc"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "476338777715-ft9ftbd20cq9l5dsh90r1gi2m2in03u2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCMpSRmrqbffOShBNY7AECMik38ifkjwc4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "476338777715-ft9ftbd20cq9l5dsh90r1gi2m2in03u2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

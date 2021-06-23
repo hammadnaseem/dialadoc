@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Dial A Doc</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+
+    <string name="chat_firebase_appId" translatable="false">dial-a-doc-4c241</string>
+    <string name="chat_firebase_url" translatable="false">https://dial-a-doc-4c241.firebaseio.com/</string>
+    <string name="chat_firebase_storage_bucket" translatable="false">gs://dial-a-doc-4c241.appspot.com</string>
+
+</resources>
